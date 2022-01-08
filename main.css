@@ -1,77 +1,191 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
-
-/***FONTS***/
-
-h1,
-h2,
-h3 {
-    font-family: 'Lora', serif;
-    font-weight: 600;
-}
-
-header a {
-    font-family: 'Lora', serif;
-    font-weight: 600;
-}
-
-
-}
-main,
-p {
-    font-family: 'Helvetica', 'Arial', 'sans-serif';
-}
-
-/***FONT COLORS AND STYLE***/
-a {
-    text-decoration: none;
-}
-li {
-    list-style-type: none;
-}
-header a {
-    color: white;
-}
-.post-content a {}
-
-/***HEADER***/
-header {
-    background-color: #6495ED;
-    margin: 0;
-    padding-bottom: 2.5rem;
-}
-header h1 {
-    margin: auto 0;
-    text-align: right;
-    margin-right: 1.7rem;
-    padding: 2rem .5rem .5rem 2rem;
-}
-header hr {
-    margin-right: 2rem;
-    margin-left: 1rem;
-}
-header li {
-    text-align: right;
-    margin-right: 1.7rem;
-    padding: .5rem;
-}
-
-/***MAIN***/
-body {
-    padding: 0;
-    margin: 0;
-}
-
-/***MAIN***/
-ul {
-    margin: auto 0;
-}
-main {
-    background-color: #FAEBD7;
-    margin: 0;
-}
-article {
-    margin: 0;
-}
-.post-date {
-    margin: 0;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
+    /***FONTS***/
+    
+    h1,
+    h2,
+    h3 {
+        font-family: 'Lora', serif;
+        font-weight: 600;
+    }
+    
+    header a {
+        font-family: 'Lora', serif;
+        font-weight: 600;
+    }
+    
+    main,
+    p,
+    .post-date {
+        font-family: 'Helvetica', 'Arial', 'sans-serif';
+    }
+    /***FONT COLORS AND STYLE***/
+    
+    a {
+        text-decoration: none;
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    
+    header a {
+        color: #FAEBD7;
+    }
+    /***HEADER***/
+    
+    header {
+        background-color: #6495ED;
+        margin: 0;
+        padding-bottom: 2.5rem;
+    }
+    
+    header h1 {
+        margin: 0 auto auto auto;
+        text-align: right;
+        margin-right: 1.7rem;
+        padding: 2rem .5rem .5rem 2rem;
+    }
+    
+    header hr {
+        margin-right: 2rem;
+        margin-left: 1rem;
+    }
+    
+    header li {
+        text-align: right;
+        margin-right: 1.7rem;
+        padding: .5rem;
+    }
+    
+    header nav ul li a,
+    header nav ul li a:visited {
+        color: #FAEBD7;
+    }
+    
+    header nav ul li a:active {
+        color: #DEB887;
+    }
+    
+    header nav ul li a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+    /***MAIN***/
+    
+    body {
+        padding: 0;
+        margin: 0;
+        background-color: #FAEBD7;
+    }
+    /***MAIN***/
+    
+    ul {
+        margin: auto 0;
+    }
+    
+    main {
+        margin: 0;
+    }
+    
+    article {
+        background-color: white;
+        margin: 2rem 1rem 2rem 1rem;
+        padding: 2rem;
+    }
+    
+    .post-date {
+        margin: 0;
+        padding: 0;
+        color: grey;
+        font-weight: 600;
+    }
+    
+    article h2 {
+        margin-top: .4rem;
+        margin-bottom: 3.8rem;
+        font-size: 1.5rem;
+    }
+    
+    article h2 a,
+    article h2 a:visited,
+    article h2 a:active {
+        color: black;
+    }
+    
+    figure img {
+        display: flex;
+        margin: auto;
+        width: 13rem;
+    }
+    
+    article p {
+        font-weight: 600;
+        font-size: .9rem;
+    }
+    
+    article p a,
+    article p a:visited {
+        color: #6495ED;
+    }
+    
+    article p a:active {
+        color: #DEB887;
+    }
+    
+    article p a:hover {
+        color: #6495ED;
+        text-decoration: underline;
+    }
+    
+    @media only screen and (min-width: 720px) {
+        body div {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+        }
+        header {
+            width: 90%;
+        }
+        header h1 {
+            font-size: 2rem;
+            margin-top: 3rem;
+            width: 70%;
+        }
+        header hr {
+            width: 70%;
+            margin: auto;
+        }
+        header li {
+            font-size: 1rem;
+            margin-bottom: .5rem;
+        }
+        main {
+            margin: 3rem;
+        }
+        .post-date {
+            margin-left: 0rem;
+            text-align: left;
+            margin-left: 2.5rem;
+            font-size: 1.54rem;
+        }
+        article {
+            padding: 3rem 3rem 6rem 3rem;
+            margin: 1.5rem 2rem 4rem 2rem;
+        }
+        article h2 {
+            margin: .7rem auto 4rem 2.5rem;
+            text-align: left;
+            font-size: 2.7rem;
+        }
+        figure {
+            margin-top: 8rem;
+            margin-bottom: 2rem;
+        }
+        figure img {
+            width: 24rem;
+            margin: auto;
+        }
+        article p {
+            font-size: 1.7rem;
+            margin: 0 2.5rem 0 2.5rem;
+        }
+    }
