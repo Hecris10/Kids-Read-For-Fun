@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
+//variables
+$heading-fonts: 'Lora',
+serif;
+$font-weight: 600;
+$media: screen;
+$feature: min-width;
+$value: 720px;
+@mixin remove-decoration {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+//FONTS
+////heading and links
+h1,
+h2,
+h3,
+header a {
+    font-family: $heading-fonts;
+    font-weight: $font-weight;
+}
+
+////text
+main,
+p,
+.post-date {
+    font-family: 'Helvetica', 'Arial', 'sans-serif';
+}
+
+//colors
+$white-yellow: #FAEBD7;
+$blue: #6495ED;
+$yellow: #DEB887;
+//font colors and style
+a,
+ul {
+    @include remove-decoration;
+}
+
+header {
+    h1 {
+        a,
+        a:visited {
+            color: $white-yellow;
+        }
+    }
+    nav {
+        ul {
+            li {
+                a {
+                    color: $white-yellow;
+                    text-decoration: none;
+                    &:hover {
+                        color: white;
+                        @include remove-decoration;
+                    }
+                    &:visited,
+                    &:active {
+                        color: $white-yellow;
+                    }
+                }
+            }
+        }
+    }
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: $white-yellow;
+}
+
+///////H E A D E R
+header {
+    background-color: $blue;
+    margin: 0;
+    padding-bottom: 2.5rem;
+}
+
+header {
+    h1 {
+        margin: 0 auto auto auto;
+        text-align: right;
+        margin-right: 1.7rem;
+        padding: 2rem .5rem .5rem 2rem;
+    }
+    hr {
+        margin-right: 2rem;
+        margin-left: 1rem;
+    }
+    li {
+        text-align: right;
+        margin-right: 1.7rem;
+        padding: .5rem;
+    }
+}
+
+
+/***MAIN***/
+
+ul {
+    margin: auto 0;
+}
+
+main {
+    margin: 0;
+}
+
+article {
+    background-color: white;
+    margin: 2rem 1rem 2rem 1rem;
+    padding: 2rem;
+    .post-date {
+        margin: 0;
+        padding: 0;
+        color: grey;
+        font-weight: $font-weight;
+    }
+    section {
+        h2 {
+            margin-top: .4rem;
+            margin-bottom: 3.8rem;
+            font-size: 1.5rem;
+            a {
+                color: black;
+                &:visited,
+                &:active {
+                    color: black;
+                }
+            }
+        }
+        figure img {
+            display: flex;
+            margin: auto;
+            width: 13rem;
+        }
+        p {
+            font-weight: $font-weight;
+            font-size: .9rem;
+            a,
+            a:visited {
+                color: $blue;
+                &:active {
+                    color: $yellow;
+                }
+                &:hover {
+                    color: $blue;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@media #{$media} and ($feature: $value) {
+    body {
+        div {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+        }
+    }
+    header {
+        width: 90%;
+        h1 {
+            font-size: 2rem;
+            margin-top: 3rem;
+            width: 70%;
+        }
+        hr {
+            width: 70%;
+            margin: auto;
+        }
+        li {
+            font-size: 1rem;
+            margin-bottom: .5rem;
+        }
+    }
+    main {
+        margin: 3rem;
+    }
+    .post-date {
+        margin-left: 0rem;
+        text-align: left;
+        margin-left: 2.5rem;
+        font-size: 1.54rem;
+    }
+    article {
+        padding: 3rem 3rem 6rem 3rem;
+        margin: 1.5rem 2rem 4rem 2rem;
+        h2 {
+            margin: .7rem auto 4rem 2.5rem;
+            text-align: left;
+            font-size: 2.7rem;
+        }
+        section {
+            figure {
+                margin-top: 8rem;
+                margin-bottom: 2rem;
+            }
+            img {
+                width: 24rem;
+                margin: auto;
+            }
+            p {
+                font-size: 1.7rem;
+                margin: 0 2.5rem 0 2.5rem;
+            }
+        }
+    }
+}
