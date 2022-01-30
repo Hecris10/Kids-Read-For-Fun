@@ -1,5 +1,5 @@
 # Kids Read For Fun
- Project showing beatiful pages only using HTML and CSS
+ Project showing beatiful pages only using HTML and SCSS
  
  
 ![Full Capture- Kids Read for Fun - Home - hecris10 github io](https://user-images.githubusercontent.com/38855938/151684583-90550878-914e-450c-a17b-e43c1f50668f.png)
